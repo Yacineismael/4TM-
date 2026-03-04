@@ -12,7 +12,7 @@ document.getElementById('surveyForm').addEventListener('submit', function(e) {
         }
     });
 
-    fetch('https://formspree.io/f/YOUR_FORM_ID', {
+    fetch('https://formspree.io/f/mkovdkgz', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
