@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 The Muslim - Questionnaire</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arial&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img src="logo.svg" alt="4 The Muslim Logo" class="logo">
+        <p>Salam Aleykoum,</p>
+        <p>Ce questionnaire vise à mieux comprendre les besoins des musulmans en matière de pratique religieuse quotidienne et à évaluer l'intérêt pour une application mobile dédiée au suivi d'objectifs religieux comme les prières, la lecture du Coran, les rappels etc...</p>
+        <p>Vos réponses nous aideront à développer un outil motivant et adapté.</p>
+        <p>Cela prendra environ 3-5 minutes.</p>
+        <p>Toutes les réponses sont confidentielles et utilisées uniquement à des fins de recherche et d'amélioration.</p>
+        <p>Merci !</p>
+
+        <form id="surveyForm">
+            <!-- Question 1 -->
+            <div class="question">
+                <label>Quel est votre âge ? *</label>
+                <select name="age" required>
+                    <option value="">Sélectionnez</option>
+                    <option>Moins de 18 ans</option>
+                    <option>18-24 ans</option>
+                    <option>25-35 ans</option>
+                    <option>36-45 ans</option>
+                    <option>45-55 ans</option>
+                    <option>56 ans et +</option>
+                </select>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <label>Quel est votre genre ? *</label>
+                <select name="genre" required>
+                    <option value="">Sélectionnez</option>
+                    <option>Homme</option>
+                    <option>Femme</option>
+                </select>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <label>Dans quel pays vivez-vous ? *</label>
+                <select name="pays" required>
+                    <option value="">Sélectionnez</option>
+                    <option>France</option>
+                    <option>Belgique</option>
+                    <option>Pays-Bas</option>
+                    <option>Autre</option>
+                </select>
+                <input type="text" name="autre_pays" placeholder="Précisez le pays si autre">
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <label>Comment décririez-vous votre niveau de pratique religieuse actuelle ? *</label>
+                <select name="niveau_pratique" required>
+                    <option value="">Sélectionnez</option>
+                    <option>Pratiquant</option>
+                    <option>Peu pratiquant</option>
+                    <option>Non pratiquant</option>
+                    <option>Débutant</option>
+                    <option>Autre</option>
+                </select>
+                <input type="text" name="autre_niveau_pratique" placeholder="Précisez si autre">
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <label>Notez-vous vos objectifs religieux et en suivez-vous la progression ? *</label>
+                <label><input type="radio" name="tracking" value="Oui" required> Oui</label>
+                <label><input type="radio" name="tracking" value="Non"> Non</label>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <label>Si oui, sur quel support ?</label>
+                <label><input type="checkbox" name="support" value="Feuille papier"> Feuille papier</label>
+                <label><input type="checkbox" name="support" value="Excel"> Excel</label>
+                <label><input type="checkbox" name="support" value="Téléphone"> Téléphone</label>
+                <label><input type="checkbox" name="support" value="Autre"> Autre</label>
+                <input type="text" name="autre_support" placeholder="Précisez le support si autre">
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question">
+                <label>Utilisez-vous actuellement des applications mobiles pour soutenir votre pratique religieuse ? *</label>
+                <label><input type="radio" name="apps_actuelles" value="Oui" required> Oui</label>
+                <label><input type="radio" name="apps_actuelles" value="Non"> Non</label>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+                <label>Si oui, quelles fonctionnalités utilisez-vous le plus ?</label>
+                <label><input type="checkbox" name="fonctionnalites" value="Horaires des prières"> Horaires des prières</label>
+                <label><input type="checkbox" name="fonctionnalites" value="Qibla"> Qibla</label>
+                <label><input type="checkbox" name="fonctionnalites" value="Rappels"> Rappels</label>
+                <label><input type="checkbox" name="fonctionnalites" value="Lecture du Coran"> Lecture du Coran</label>
+                <label><input type="checkbox" name="fonctionnalites" value="Autre"> Autre</label>
+                <input type="text" name="autre_fonctionnalites" placeholder="Précisez la fonctionnalité si autre">
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+                <label>Sur quels aspects de votre pratique religieuse aimeriez-vous vous améliorer ? *</label>
+                <label><input type="checkbox" name="amelioration" value="Assiduité prières" required> Être plus assidu dans les prières</label>
+                <label><input type="checkbox" name="amelioration" value="Lecture Coran"> Augmenter la lecture du Coran</label>
+                <label><input type="checkbox" name="amelioration" value="Mémorisation Coran"> Mémoriser le Coran</label>
+                <label><input type="checkbox" name="amelioration" value="Apprendre arabe"> Apprendre l'arabe</label>
+                <label><input type="checkbox" name="amelioration" value="Jeûne"> Jeûner plus souvent</label>
+                <label><input type="checkbox" name="amelioration" value="Autre"> Autre</label>
+                <input type="text" name="autre_amelioration" placeholder="Précisez l'aspect si autre">
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question">
+                <label>Quelles difficultés rencontrez-vous le plus souvent pour maintenir vos objectifs religieux ? *</label>
+                <label><input type="checkbox" name="difficultes" value="Manque motivation"> Manque de motivation ou de discipline</label>
+                <label><input type="checkbox" name="difficultes" value="Oubli emploi temps"> Oubli dû à un emploi du temps chargé</label>
+                <label><input type="checkbox" name="difficultes" value="Suivi manuel"> Difficulté à suivre manuellement</label>
+                <label><input type="checkbox" name="difficultes" value="Autre"> Autre</label>
+                <input type="text" name="autre_difficultes" placeholder="Précisez la difficulté si autre">
+            </div>
+
+            <!-- Question 11 -->
+            <div class="question">
+                <label>Seriez-vous prêt à payer 4,99 € par mois pour une telle application ? *</label>
+                <label><input type="radio" name="paiement" value="Oui" required> Oui</label>
+                <label><input type="radio" name="paiement" value="Non"> Non</label>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="question">
+                <label>Quel prix mensuel trouveriez-vous acceptable ? *</label>
+                <select name="prix_accept" required>
+                    <option value="">Sélectionnez</option>
+                    <option>Gratuit</option>
+                    <option>Moins de 2 euros</option>
+                    <option>2 à 4 euros</option>
+                    <option>Autre</option>
+                </select>
+                <input type="text" name="autre_prix_accept" placeholder="Précisez le prix si autre">
+            </div>
+
+            <!-- Question 13 -->
+            <div class="question">
+                <label>Comment avez-vous entendu parler de ce questionnaire ? *</label>
+                <select name="source" required>
+                    <option value="">Sélectionnez</option>
+                    <option>Réseaux sociaux</option>
+                    <option>Bouche à oreille</option>
+                    <option>Autre</option>
+                </select>
+                <input type="text" name="autre_source" placeholder="Précisez si autre">
+            </div>
+
+            <!-- Question 14 -->
+            <div class="question">
+                <label>Feedback : Avez-vous des suggestions ?</label>
+                <textarea name="feedback" rows="4"></textarea>
+            </div>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
