@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: 4themuslim-form
+    runtime: node
+    buildCommand: npm install
+    startCommand: node server-with-email.js
+    envVars:
+      - key: GMAIL_APP_PASSWORD
+        sync: false
+      - key: NODE_ENV
+        value: production
+    autoDeploy: true
+

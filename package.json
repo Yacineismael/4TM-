@@ -1,0 +1,16 @@
+{
+  "name": "4themuslim-form",
+  "version": "1.0.0",
+  "description": "Formulaire 4 The Muslim avec envoi par email",
+  "main": "server-with-email.js",
+  "scripts": {
+    "start": "node server-with-email.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.7",
+    "dotenv": "^16.3.1",
+    "body-parser": "^1.20.2"
+  }
+}
+
