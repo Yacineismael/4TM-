@@ -72,35 +72,47 @@
             <!-- Question 5 -->
             <div class="question">
                 <label>Notez-vous vos objectifs religieux et en suivez-vous la progression ? *</label>
-                <label><input type="radio" name="tracking" value="Oui" required> Oui</label>
-                <label><input type="radio" name="tracking" value="Non"> Non</label>
+                <select name="tracking" required>
+                    <option value="">Sélectionnez</option>
+                    <option value="Oui">Oui</option>
+                    <option value="Non">Non</option>
+                </select>
             </div>
 
             <!-- Question 6 -->
             <div class="question">
                 <label>Si oui, sur quel support ?</label>
-                <label><input type="checkbox" name="support" value="Feuille papier"> Feuille papier</label>
-                <label><input type="checkbox" name="support" value="Excel"> Excel</label>
-                <label><input type="checkbox" name="support" value="Téléphone"> Téléphone</label>
-                <label><input type="checkbox" name="support" value="Autre"> Autre</label>
+                <select name="support">
+                    <option value="">Sélectionnez</option>
+                    <option value="Feuille papier">Feuille papier</option>
+                    <option value="Excel">Excel</option>
+                    <option value="Téléphone">Téléphone</option>
+                    <option value="Autre">Autre</option>
+                </select>
                 <input type="text" name="autre_support" placeholder="Précisez le support si autre">
             </div>
 
             <!-- Question 7 -->
             <div class="question">
                 <label>Utilisez-vous actuellement des applications mobiles pour soutenir votre pratique religieuse ? *</label>
-                <label><input type="radio" name="apps_actuelles" value="Oui" required> Oui</label>
-                <label><input type="radio" name="apps_actuelles" value="Non"> Non</label>
+                <select name="apps_actuelles" required>
+                    <option value="">Sélectionnez</option>
+                    <option value="Oui">Oui</option>
+                    <option value="Non">Non</option>
+                </select>
             </div>
 
             <!-- Question 8 -->
             <div class="question">
                 <label>Si oui, quelles fonctionnalités utilisez-vous le plus ?</label>
-                <label><input type="checkbox" name="fonctionnalites" value="Horaires des prières"> Horaires des prières</label>
-                <label><input type="checkbox" name="fonctionnalites" value="Qibla"> Qibla</label>
-                <label><input type="checkbox" name="fonctionnalites" value="Rappels"> Rappels</label>
-                <label><input type="checkbox" name="fonctionnalites" value="Lecture du Coran"> Lecture du Coran</label>
-                <label><input type="checkbox" name="fonctionnalites" value="Autre"> Autre</label>
+                <select name="fonctionnalites">
+                    <option value="">Sélectionnez</option>
+                    <option value="Horaires des prières">Horaires des prières</option>
+                    <option value="Qibla">Qibla</option>
+                    <option value="Rappels">Rappels</option>
+                    <option value="Lecture du Coran">Lecture du Coran</option>
+                    <option value="Autre">Autre</option>
+                </select>
                 <input type="text" name="autre_fonctionnalites" placeholder="Précisez la fonctionnalité si autre">
             </div>
 
@@ -129,8 +141,11 @@
             <!-- Question 11 -->
             <div class="question">
                 <label>Seriez-vous prêt à payer 4,99 € par mois pour une telle application ? *</label>
-                <label><input type="radio" name="paiement" value="Oui" required> Oui</label>
-                <label><input type="radio" name="paiement" value="Non"> Non</label>
+                <select name="paiement" required>
+                    <option value="">Sélectionnez</option>
+                    <option value="Oui">Oui</option>
+                    <option value="Non">Non</option>
+                </select>
             </div>
 
             <!-- Question 12 -->
